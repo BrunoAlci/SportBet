@@ -633,121 +633,110 @@ display: flex;
   display: flex;
   align-self: center;
   flex-flow: column wrap;
-}       
-          .slick-list{
-           position: relative;
+}         .swiper-container{
+           
             display: flex;
             align-items: center;
-            width: fit-content;
+          
             height: 604px;
             padding: 10px 0px;
             
             max-width: 70vw;
             overflow: hidden;
           }
-          .slick-track{
-            position: relative;
-            top: 0;
-            left: 0;
+          .swiper-wrapper{
             display: flex;
-            justify-content: center;
+            
             transition: .5s ease-in-out;
             left: 5rem;
           }
-          .logo-img{
-            margin-top: 40px;
-            margin-left: 20px;
+          .swiper-slide{
+            
+              width: 388px;
+              height: 340px;
+              left: 0px;
+              top: 0px;
+              position: relative;
+              background: linear-gradient(180deg, #2E2E2E 0%, #1E1E1E 100%);
+              display: flex;
+              flex-flow: column nowrap;
+              /* Inside auto layout */
+    
+              flex: none;
+              order: 0;
+              flex-grow: 0;
+              margin: 0px 24px;
+            
           }
+          
         h4{
-          display: flex;
-          align-items: baseline;
+          margin-top: -30px;
+          margin-left: 20px;
         width: 324px;
         height: 20px;
           font-style: normal;
           font-weight: bold;
           font-size: 16px;
           line-height: 20px;
-          display: flex;
-          align-items: center;
+         
           color: #BEBEBE;  
-          margin-top: 40px;
-            margin-left: 20px;  
+         
+            
         }   
         .text-card{
-          align-items: baseline;
-          display: flex;
+          margin-top: 15px;
+          margin-left: 20px;  
         width: 324px;
           height: 68px;
          font-style: normal;
           font-weight: 500;
           font-size: 14px;
           line-height: 17px;
-          display: flex;
-          align-items: center;
+          
           color: #BEBEBE;
-          margin-top: 20px;
-            margin-left: 20px;
+         
         }    
           
           
         
           
          
-        
+        .slick-2{
+          display: flex;
+          flex-flow: column;
+          flex-direction: row-reverse;
+          align-items: center;
+        }
         .futbolista{
-            position: absolute;
+           
             width: 160px;
             height: 160px;
             clip-path: polygon(0 0, 100% 0, 100% 100%);  
         }
-        .futbolista::after {
-            content: '';
-            
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: gray;
-            transform: skewY(26.5deg);
-            transform-origin: left top;
-          }
-        .slick{
-          width: 388px;
-          height: 340px;
-          left: 0px;
-          top: 0px;
-          position: relative;
-          background: linear-gradient(180deg, #2E2E2E 0%, #1E1E1E 100%);
-
-          /* Inside auto layout */
-
-          flex: none;
-          order: 0;
-          flex-grow: 0;
-          margin: 0px 24px;
-        }
+        
+        
         .button2{
+          margin-top: 20px;
           display: flex;
-          flex-direction: row;
+         margin-left: 20px;
           justify-content: center;
           align-items: center;
           padding: 3px 24px;
-          position: absolute;
+         
           width: 168px;
           height: 44px;
          background: linear-gradient(180deg, #2E2E2E 0%, #1E1E1E 100%);
           border: 1px solid #BEBEBE;
           box-sizing: border-box;
           cursor: pointer;
-          margin-top: 20px;
-          margin-left: 20px;
+          
          }  
           
        
         .button2 p{
           color: #BEBEBE;
           font-family: 'Montserrat', sans-serif;
-          position: relative;
+         
           height: 20px;
           font-style: normal;
           font-weight: bold;
@@ -767,128 +756,228 @@ display: flex;
         color: #04B420;
         background: linear-gradient(0deg, #121212, #121212);
         }
-      /* buttons */
-      .slick-arrow{
-        border-radius: 30px;
-        background-color: #fff;
-        position: absolute;
-        bottom: 18rem;
-      
-        width: 48px;
-        height: 48px;
-        text-align: center;
-        box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
-        border: 0;
-        cursor: pointer;
-        
-      }
-      .slick-arrow:focus{
-        outline: 0;
-      }
-      .slick-arrow svg{
-        width: 12px;
-        height: 100%;
-        color: rgba(0,0,0,.7);
-      }
-      .slick-prev{
-       
-        left: 0px;
-      }
-      .slick-next{
-       
-        right: 0px;
-      }
+     
+     
 .we-about{
   background: #121212;
   height: 811px;
   position: relative;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
 }
-  .we-about-1{
-    display: flex;
-    align-self: center;
-    flex-flow: column;
-  }
-  .sub3{
-    width: 800px;
-    height: 34px;
-    left: 0px;
-    margin-top: 50px;
-    
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 34px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    text-transform: uppercase;
-    
-    color: #FFFFFF;
-  }
-  .texto2{
-    width: 800px;
-    height: 48px;
-    left: 0px;
-    margin-top: 20px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-  }
-  .we-about-2{
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: 10rem;
-    margin-top: 5rem;
-  }
-    .text-apuesta{
-     
-      width: 480px;
-      height: 51px;
-      align-items: baseline;
-     
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 17px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      
-      color: #BEBEBE
+        .we-about-1{
+          display: flex;
+          align-self: center;
+          flex-flow: column;
+        }
+        .sub3{
+          width: 800px;
+          height: 34px;
+          left: 0px;
+          margin-top: 50px;
+          
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 28px;
+          line-height: 34px;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          text-transform: uppercase;
+          
+          color: #FFFFFF;
+        }
+        .texto2{
+          width: 800px;
+          height: 48px;
+          left: 0px;
+          margin-top: 20px;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 24px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: #FFFFFF;
+        }
+        .we-about-2{
+          display: flex;
+          justify-content: space-evenly;
+          
+          margin-top: 5rem;
+        }
+          .sistema{
+            display: flex;
+            align-items: center;
+            flex-flow: column nowrap;
+          }
+          .text-apuesta{
+            margin-top: 1rem;
+            width: 480px;
+            height: 51px;
+            align-items: baseline;
+          
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            
+            color: #BEBEBE
+            }
+            .h3-1{
+              justify-content: center;
+              width: 480px;
+              height: 22px;
+              margin-top: 1.3rem;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 22px;
+              
+              
+              display: flex;
+              align-items: center;
+              text-align: center;
+              text-transform: uppercase;
+              
+              color: #BEBEBE;
+              }
+              .sistema{
+                justify-content: center;
+              }
+.quienes-somos{
+  background: #171717;
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+}     
+      .container-1{
+        display: flex;
+        flex-flow: column wrap;
       }
-      .h3-1{
-        align-items: baseline;
-        width: 480px;
-        height: 22px;
-       
+      .titulo-somos{
+        width: 680px;
+        height: 29px;
+        font-style: normal;
         font-weight: 600;
-        font-size: 18px;
-        line-height: 22px;
-        
-        
+        font-size: 24px;
+        line-height: 29px;
         display: flex;
         align-items: center;
-        text-align: center;
         text-transform: uppercase;
-        
-        color: #BEBEBE;
-        }
-        .sistema{
-          justify-content: center;
-        }
-.fondo4{
-  background: #171717;
-}
+
+        color: #FFFFFF;
+
+      }
+      .text-somos{
+        width: 680px;
+        height: 240px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+
+        color: #BEBEBE
+      }
+      .contactarnos{
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 5px 50px;
+        height: 45px;
+        border: none;
+        background: linear-gradient(180deg, #04B420 0%, #0A8916 100%);
+        color: white;
+        width: auto;
+        float: left;
+        cursor: pointer;
+        margin: 1em 2em 1em 2em;
+      }
+      .contactarnos .linea1,
+      .contactarnos .linea2,
+      .contactarnos .linea1_1,
+      .contactarnos .linea2_2,
+      .contactarnos .linea1,
+      .contactarnos .linea2,
+      .contactarnos .linea1_1,
+      .contactarnos .linea2_2 {
+        top: 0;
+        right: 0;
+      }
+      .contactarnos .linea3,
+      .contactarnos .linea4,
+      .contactarnos .linea3_2,
+      .contactarnos .linea4_2,
+      .contactarnos .linea3,
+      .contactarnos .linea4,
+      .contactarnos.linea3_2,
+      .contactarnos .linea4_2 {
+        bottom: 0;
+        left: 0;
+      }
+      .contactarnos .linea1,
+      .contactarnos.linea3,
+      .contactarnos .linea1_2,
+      .contactarnos .linea3_2,
+      .contactarnos .linea1,
+      .contactarnos .linea3,
+      .contactarnos .linea1_2,
+      .contactarnos.linea3_2 {
+        height: 3px;
+        width: 18px;
+      }
+      .contactarnos .linea2,
+      .contactarnos .linea4,
+      .contactarnos .linea2_2,
+      .contactarnos .linea4_2,
+      .contactarnos.linea2,
+      .contactarnos .linea4,
+      .contactarnos .linea2_2,
+      .contactarnos .linea4_2{
+        height: 18px;
+        width: 3px;
+      }
+      .contactarnos span,
+      .contactarnos span {
+        position: absolute;
+        background-color: white;
+        display: block;
+        transition: all 300ms; 
+      }
+      .contactarnos:hover .linea1,
+      .contactarnos:hover .linea3,
+      .contactarnos:active .linea1,
+      .contactarnos:active .linea3,
+      .contactarnos:hover .linea1,
+      .contactarnos:hover .linea3,
+      .contactarnos:active .linea1,
+      .contactarnos:active .linea3 {
+        width: 100%;
+        background: white(135,238,190,1);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87eebe', endColorstr='#289dbd', GradientType=1 );
+      }
+      .contactarnos:hover .linea2,
+      .contactarnos:active .linea2,
+      .contactarnos:hover .linea2,
+      .contactarnos:active .linea2{
+        height:100%;
+        background: white;
+      }
+      .contactarnos:hover .linea4,
+      .contactarnos:active .linea4,
+      .contactarnos:hover .linea4,
+      .contactarnos:active .linea4{
+        height:100%;
+        background: white;
+      }
 .fondo5{
   background: #121212;
 }
