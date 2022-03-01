@@ -181,7 +181,8 @@ ul{
 .texto-principal{
 display: flex;
  flex-flow:  wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 5rem;
 }  
 .main-1{
     display: flex;
@@ -805,8 +806,8 @@ display: flex;
         }
         .we-about-2{
           display: flex;
-          justify-content: space-evenly;
-          
+          justify-content: center;
+          gap: 5rem;
           margin-top: 5rem;
         }
           .sistema{
@@ -853,131 +854,198 @@ display: flex;
               }
 .quienes-somos{
   background: #171717;
-  position: relative;
+  
   display: flex;
   flex-flow: column wrap;
 }     
       .container-1{
         display: flex;
-        flex-flow: column wrap;
-      }
-      .titulo-somos{
-        width: 680px;
-        height: 29px;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 29px;
-        display: flex;
-        align-items: center;
-        text-transform: uppercase;
+        justify-content: center;
+       position: relative;
+       gap: 3rem;
+        align-items: flex-end;
+      }       
+            .rectangle1{
+              background: url(img/Rectangle\ 6.png);
+              position: absolute;
+              width: 454.5px;
+              height: 454.5px;
+              margin-top: 0;
+            }
+            .vector1{
+              background: url(img/Vector\ 6.png);
+              position: absolute;
+              width: 454.5px;
+              height: 454.5px;
+            }
+            .vector2{
+              background: url(img/Vector\ 7.png);
+              position: absolute;
+              width: 454.5px;
+              height: 454.5px;
+            }
+            .sub-container1{
+              display: flex;
+              flex-direction: column;
+              align-items: baseline;
+              margin-top: 7rem;
+            }
+            .titulo-somos{
+              width: 680px;
+              height: 29px;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 29px;
+              display: flex;
+              align-items: center;
+              text-transform: uppercase;
+              
+              color: #FFFFFF;
 
-        color: #FFFFFF;
+            }
+            .text-somos{
+              margin-top: 2.5rem;
+              width: 680px;
+              height: 240px;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 20px;
+              display: flex;
+              align-items: center;
 
-      }
-      .text-somos{
-        width: 680px;
-        height: 240px;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 20px;
+              color: #BEBEBE
+            }
+            .contactarnos{
+              justify-content: center;
+              display: flex;
+              align-items: center;
+              position: relative;
+              padding: 16px 24px;
+              width: 241px;
+              height: 52px;
+              border: none;
+              background: linear-gradient(180deg, #04B420 0%, #0A8916 100%);
+              color: white;
+              
+              float: left;
+              cursor: pointer;
+              margin: 2.5em 2em 1em 0;
+            }
+            .contactarnos .linea1,
+            .contactarnos .linea2,
+            .contactarnos .linea1_1,
+            .contactarnos .linea2_2,
+            .contactarnos .linea1,
+            .contactarnos .linea2,
+            .contactarnos .linea1_1,
+            .contactarnos .linea2_2 {
+              top: 0;
+              right: 0;
+            }
+            .contactarnos .linea3,
+            .contactarnos .linea4,
+            .contactarnos .linea3_2,
+            .contactarnos .linea4_2,
+            .contactarnos .linea3,
+            .contactarnos .linea4,
+            .contactarnos.linea3_2,
+            .contactarnos .linea4_2 {
+              bottom: 0;
+              left: 0;
+            }
+            .contactarnos .linea1,
+            .contactarnos.linea3,
+            .contactarnos .linea1_2,
+            .contactarnos .linea3_2,
+            .contactarnos .linea1,
+            .contactarnos .linea3,
+            .contactarnos .linea1_2,
+            .contactarnos.linea3_2 {
+              height: 3px;
+              width: 18px;
+            }
+            .contactarnos .linea2,
+            .contactarnos .linea4,
+            .contactarnos .linea2_2,
+            .contactarnos .linea4_2,
+            .contactarnos.linea2,
+            .contactarnos .linea4,
+            .contactarnos .linea2_2,
+            .contactarnos .linea4_2{
+              height: 18px;
+              width: 3px;
+            }
+            .contactarnos span,
+            .contactarnos span {
+              position: absolute;
+              background-color: white;
+              display: block;
+              transition: all 300ms; 
+            }
+            .contactarnos:hover .linea1,
+            .contactarnos:hover .linea3,
+            .contactarnos:active .linea1,
+            .contactarnos:active .linea3,
+            .contactarnos:hover .linea1,
+            .contactarnos:hover .linea3,
+            .contactarnos:active .linea1,
+            .contactarnos:active .linea3 {
+              width: 100%;
+              background: white(135,238,190,1);
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87eebe', endColorstr='#289dbd', GradientType=1 );
+            }
+            .contactarnos:hover .linea2,
+            .contactarnos:active .linea2,
+            .contactarnos:hover .linea2,
+            .contactarnos:active .linea2{
+              height:100%;
+              background: white;
+            }
+            .contactarnos:hover .linea4,
+            .contactarnos:active .linea4,
+            .contactarnos:hover .linea4,
+            .contactarnos:active .linea4{
+              height:100%;
+              background: white;
+            }
+      .sub-container2{
         display: flex;
-        align-items: center;
-
-        color: #BEBEBE
-      }
-      .contactarnos{
-        display: flex;
-        align-items: center;
-        position: relative;
-        padding: 5px 50px;
-        height: 45px;
-        border: none;
-        background: linear-gradient(180deg, #04B420 0%, #0A8916 100%);
-        color: white;
-        width: auto;
-        float: left;
-        cursor: pointer;
-        margin: 1em 2em 1em 2em;
-      }
-      .contactarnos .linea1,
-      .contactarnos .linea2,
-      .contactarnos .linea1_1,
-      .contactarnos .linea2_2,
-      .contactarnos .linea1,
-      .contactarnos .linea2,
-      .contactarnos .linea1_1,
-      .contactarnos .linea2_2 {
-        top: 0;
-        right: 0;
-      }
-      .contactarnos .linea3,
-      .contactarnos .linea4,
-      .contactarnos .linea3_2,
-      .contactarnos .linea4_2,
-      .contactarnos .linea3,
-      .contactarnos .linea4,
-      .contactarnos.linea3_2,
-      .contactarnos .linea4_2 {
-        bottom: 0;
-        left: 0;
-      }
-      .contactarnos .linea1,
-      .contactarnos.linea3,
-      .contactarnos .linea1_2,
-      .contactarnos .linea3_2,
-      .contactarnos .linea1,
-      .contactarnos .linea3,
-      .contactarnos .linea1_2,
-      .contactarnos.linea3_2 {
-        height: 3px;
-        width: 18px;
-      }
-      .contactarnos .linea2,
-      .contactarnos .linea4,
-      .contactarnos .linea2_2,
-      .contactarnos .linea4_2,
-      .contactarnos.linea2,
-      .contactarnos .linea4,
-      .contactarnos .linea2_2,
-      .contactarnos .linea4_2{
-        height: 18px;
-        width: 3px;
-      }
-      .contactarnos span,
-      .contactarnos span {
-        position: absolute;
-        background-color: white;
-        display: block;
-        transition: all 300ms; 
-      }
-      .contactarnos:hover .linea1,
-      .contactarnos:hover .linea3,
-      .contactarnos:active .linea1,
-      .contactarnos:active .linea3,
-      .contactarnos:hover .linea1,
-      .contactarnos:hover .linea3,
-      .contactarnos:active .linea1,
-      .contactarnos:active .linea3 {
-        width: 100%;
-        background: white(135,238,190,1);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87eebe', endColorstr='#289dbd', GradientType=1 );
-      }
-      .contactarnos:hover .linea2,
-      .contactarnos:active .linea2,
-      .contactarnos:hover .linea2,
-      .contactarnos:active .linea2{
-        height:100%;
-        background: white;
-      }
-      .contactarnos:hover .linea4,
-      .contactarnos:active .linea4,
-      .contactarnos:hover .linea4,
-      .contactarnos:active .linea4{
-        height:100%;
-        background: white;
-      }
+        
+        align-items: flex-start;
+      }      
+            .somos-image{
+              clip-path: polygon(0 0, 87% 0, 100% 14%, 100% 100%, 13% 100%, 0 86%);
+              width: 444px;
+              height: 444px;
+            } 
+            .certificaded{
+              position: relative;
+              background: linear-gradient(180deg, #2E2E2E 0%, #1E1E1E 100%);
+              color: #FFFFFF;
+              text-align: center;
+              display: flex;
+              padding: 16px;
+              justify-content: space-around;
+              align-items: flex-end;
+              width: 158px;
+              height: 124px;
+              left: -5rem;
+              bottom: -16.5rem;
+             
+              }
+              .svg-5{
+                position: absolute;
+                left: 2.8rem;
+                bottom: 4.2rem;
+              }
+              .svg-6{
+                position: absolute;
+                left: 3rem;
+                bottom: 4.2rem;
+              }
+              
 .fondo5{
   background: #121212;
 }
