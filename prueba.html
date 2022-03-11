@@ -5,42 +5,88 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Example</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
+  
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,800&family=Roboto:wght@300&display=swap');    
     </style>
-     
+     <link rel="stylesheet" href="../package/css/swiper.min.css">
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   
 </head>
 <body> 
   <div class="padre">
     
   
-    <div class="banner-main"><header class="header">
+    <div class="banner-main">
+    <header class="header">
+      <!-- menu responsive -->
+  <div class="menu-responsive">  
+    
+      <div class="menu_bar">
+        <nav class="nav-responsive">
+            <div id="menu-responsive">
+              <div class="ul-responsive">
+                    <ul>
+                      <li ><a href="#"class="a-inicio">INICIO</a></li>
+                      <li ><a href="#"class="a-nosotros">NOSOTROS</a></li>
+                      <li class="a-productos"><a href="#">PRODUCTOS<span class="icon-responsive"></span></a>
+                              <ul>
+                                <li><a href="#">Enlace 2.2</a></li>
+                                <li><a href="#">Enlace 2.3</a></li>
+                              </ul>
+                        </li>
+                    <li class="a-apuestas"><a href="#">CASA DE APUESTAS<span class="icon-responsive"></span></a>
+                              <ul>
+                                <li><a href="#">Enlace 3.2</a></li>
+                                <li><a href="#">Enlace 3.3</a></li>
+                              </ul> 
+                      </li>
+                  <li class="a-ayuda"><a href="#">AYUDA<span class="icon-responsive"></span></a>
+                            <ul>
+                                <li><a href="#">Enlace 4.2</a></li>
+                                <li><a href="#">Enlace 4.3</a></li>
+                            </ul>
+                      </li>
+                    </ul>
+              </div>
+            </div> 
+        </nav>
+      </div>
+      <div class="logo-responsive"><img src="img-responsive/logo.png" alt=""></div>
+      <div class="whatsapp"></div>
+  </div>   
+     <!-- menu responsive -->    
+    
+        
+    
+  
+    
+    
+     <!-- menu desktop -->
     <div class="menu">
-     <div class="logo"><img src="img/logo.png" alt="Logo"></div>
-      <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-responsive">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H20V2H0V0ZM0 6H14V8H0V6ZM14 12H0V14H14V12Z" fill="white"/>
-        </svg>
+      <div class="logo"><img src="img/logo.png" alt="Logo"></div> 
     <nav class="nav">
       <ul id="menu">
       <li ><a href="#"class="a-inicio">INICIO</a></li>
       <li ><a href="#"class="a-nosotros">NOSOTROS</a></li>
       <li class="a-productos"><a href="#">PRODUCTOS<svg style="width:24px;height:24px" viewBox="0 0 24 24" class="svg3">
-        <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg></a>
+        <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg><span class="icon-responsive"></span></a>
               <ul>
                 <li><a href="#">Enlace 2.2</a></li>
                 <li><a href="#">Enlace 2.3</a></li>
               </ul>
         </li>
     <li class="a-apuestas"><a href="#">CASA DE APUESTAS<svg style="width:24px;height:24px" viewBox="0 0 24 24" class="svg3">
-      <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg></a>
+      <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg><span class="icon-responsive"></span></a>
               <ul>
                 <li><a href="#">Enlace 3.2</a></li>
                 <li><a href="#">Enlace 3.3</a></li>
               </ul> 
       </li>
    <li class="a-ayuda"><a href="#">AYUDA<svg style="width:24px;height:24px" viewBox="0 0 24 24" class="svg3">
-        <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg></a>
+        <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg><span class="icon-responsive"></span></a>
             <ul>
                 <li><a href="#">Enlace 4.2</a></li>
                 <li><a href="#">Enlace 4.3</a></li>
@@ -56,6 +102,7 @@
       <a href="#" class="a-contactanos">CONTÁCTANOS</a>
     </div>
   </div> 
+      <!-- menu desktop -->
 </header>
       <div class="texto-principal">
       <div class="main-1">
@@ -234,15 +281,8 @@
   </div>
 </div>
 <div class="quienes-somos">
-  
-          
-          
-    <div class="container-1">
-      <div class="rectangle1"></div>
-      <div class="vector1"></div>
-      <div class="vector2"></div>
-      
-        <div class="sub-container1">
+  <div class="container-1">
+      <div class="sub-container1">
           <h2 class="titulo-somos">¿Quiénes somos?</h2>
           <p class="text-somos">En nuestra trayectoria en el mercado nos hemos convertido en una de las Empresas de Software de Apuestas que más ha apoyado e impulsado a cientos de emprendedores a montar su propia casa de apuestas deportivas en todo el Perú. Trabajando siempre con las mejores tecnologías y ofreciendo asesoramiento profesional a todos nuestros clientes.<br><br> Estamos comprometidos con el crecimiento de nuestros socios y clientes. Te acompañamos y apoyamos en todas las fases, desde la planificación, construcción e impulso y crecimiento de tu propio local de apuestas <br><br> ¡No esperes más, conviértete en nuestro socio y comienza a ganar con un negocio rentable!</p>
             <div class="contactarnos">
@@ -252,7 +292,7 @@
             <span class="linea4"></span>
             <p>CONTACTARNOS</p>
             </div>
-            
+           
         </div>
         <div class="sub-container2">  
           <img src="img/somos.png"  class="somos-image">
@@ -270,27 +310,38 @@
         
     </div>
     <div class=parallax></div>
-    <div>
-      <h2 class="h2-parallax1">12,000</h2> 
-      <h2 class="h2-parallax2">+10.000</h2>
-      <h2 class="h2-parallax3">+180</h2> 
-      <h2 class="h2-parallax4">12.900</h2> 
-      <h2 class="h2-parallax5">10.000</h2>
+    <div class="container-parallax">
+      <div class="caja-parallax">
+      <h2 class="h2-parallax">12,000</h2>
+      <p class="text-parallax">CASAS DE APUESTAS EN PERÚ</p> 
+      </div>
+      <div class="caja-parallax">
+      <h2 class="h2-parallax">+10.000</h2>
+      <p class="text-parallax">EVENTOS DEPORTIVOS EN LÍNEA</p>
+      </div>
+      <div class="caja-parallax">
+      <h2 class="h2-parallax">+180</h2>
+      <p class="text-parallax">DATOS DE RENTABILIDAD</p> 
+      </div>
+      <div class="caja-parallax">
+      <h2 class="h2-parallax">12.900</h2> 
+      <p class="text-parallax">TICKET PROMEDIO DE SOCIOS</p>
+      </div>
+      <div class="caja-parallax">
+      <h2 class="h2-parallax">10.000</h2>
+      <p class="text-parallax">CASAS DE APUESTAS PERÚ</p>
+      </div>
     </div>
-    <div>
-      <p class="text-parallax1">CASAS DE APUESTAS EN PERÚ</p>
-      <p class="text-parallax2">EVENTOS DEPORTIVOS EN LÍNEA</p>
-      <p class="text-parallax3">DATOS DE RENTABILIDAD</p>
-      <p class="text-parallax4">TICKET PROMEDIO DE SOCIOS</p>
-      <p class="text-parallax5">CASAS DE APUESTAS PERÚ</p>
-    </div>
+  
     <div class="container-2">
-      <img src="img/socio.png" class="socio-img">
-      <img src="img/Rectangle 6.png" class="rectangle">
-      <img src="img/Vector 6.png" class="vector-1">
-      <img src="img/Vector 7.png" class="vector-2">
+      <div class="sub-container-1">
+          <img src="img/socio.png" class="socio-img">
+          
+      </div>
+      <div class="sub-container-2">
       <h2 class="sub-socio">CONVIÉRTETE EN NUESTRO SOCIO Y EMPRENDE EN UN NEGOCIO RENTABLE</h2>
       <p class="text-socio">Los sistemas de apuesta son cada vez mas populares y la tendencia sigue aumando.Los eventos deportivos y máquinas de viodelotería cada vez atraen más público.<br><br>Contamos con un sistema de administración con el cual tendrá acceso a toda la información sobre sus clientes y ganancias en tiempo real.Podrá ver su riesgo y el comportamiento de su negocio.Si desea un manejo personal en sus líneas de apuestas o limitar eventos para sus jugadores,lo podrá realizar por medio de nuestro sistema.<br> <br>Si estás buscando un proveedor de sofware de Igaming y esté considerando invertir en los negocios de apuestas no dudes en contactarnos,será un gusto poder ayudarte.</p>
+      <div class="container-socio">
           <div class="socio">
               <span class="linea1"></span>
               <span class="linea2"></span>
@@ -298,51 +349,36 @@
               <span class="linea4"></span>
               <p>¡QUIERO SER SOCIO!</p>
           </div>
+        </div>
+      </div>
     </div> 
    
 </div>
-  <section class="fondo5">
-    <h2 class="sub-trabajo">NUESTRO MÉTODO DE TRABAJO</h2>
-    <p class="text-trabajo">En Sportbetperú estamos comprometidos con nuestro socios,te apoyamos en planificación,contrucción y crecimiento de tu negocio.</p>
-    <img src="img/image 18 (Traced).png" class="img-reunimos">
-    <h3 class="sub-reunimos">NOS REUNIMOS</h3>
-    <p class="text-reunimos">Resuelve tus dudas desde el primer día.Nuestros asesores lo háran posible.!El primer contacto es importante¡</p>
-    <img src="img/image 15 (Traced).png" class="img-impulsamos"> 
-    <h3 class="sub-impulsamos">TE IMPULSAMOS</h3>
-    <p class="text-impulsamos">Lo apoyamos en cada frase de nuestra asociación.Desde la planificacion hasta las operaciones en curso,no lo dejaremos solo.</p>
-    <img src="img/image 17 (Traced).png" class="img-crecemos">
-    <h3 class="sub-crecemos">CRECEMOS JUNTOS</h3>
-    <p class="text-crecemos">Nos importa tu crecimiento.Juntos lograremos alcanzar todas las metas comerciales y garantizar tus ingresos.</p>
-    <svg width="291" height="578" viewBox="0 0 291 578" fill="none" xmlns="http://www.w3.org/2000/svg" class="rectangle2">
-      <path d="M1 0L290 289L1 578" stroke="url(#paint0_linear_1_969)"/>
-      <defs>
-      <linearGradient id="paint0_linear_1_969" x1="145.5" y1="144.5" x2="-143.5" y2="433.5" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2B2B2B"/>
-      <stop offset="1" stop-color="#121212"/>
-      </linearGradient>
-      </defs>
-      </svg>
-  <img src="/img/Rectangle 7.png" class="rectangle3">
-  <svg width="291" height="578" viewBox="0 0 291 578" fill="none" xmlns="http://www.w3.org/2000/svg" class="rectangle4">
-    <path d="M1 0L290 289L1 578" stroke="url(#paint0_linear_1_969)"/>
-    <defs>
-    <linearGradient id="paint0_linear_1_969" x1="145.5" y1="144.5" x2="-143.5" y2="433.5" gradientUnits="userSpaceOnUse">
-    <stop stop-color="#2B2B2B"/>
-    <stop offset="1" stop-color="#121212"/>
-    </linearGradient>
-    </defs>
-    </svg>
-  <svg width="291" height="578" viewBox="0 0 291 578" fill="none" xmlns="http://www.w3.org/2000/svg" class="rectangle5">
-    <path d="M1 0L290 289L1 578" stroke="url(#paint0_linear_1_969)"/>
-    <defs>
-    <linearGradient id="paint0_linear_1_969" x1="145.5" y1="144.5" x2="-143.5" y2="433.5" gradientUnits="userSpaceOnUse">
-    <stop stop-color="#2B2B2B"/>
-    <stop offset="1" stop-color="#121212"/>
-    </linearGradient>
-    </defs>
-    </svg>
-</section>
-<section class="fondo6">
+  <div class="metodo-trabajo">
+    <div class="trabajo-1">
+      <h2 class="sub-trabajo">NUESTRO MÉTODO DE TRABAJO</h2>
+      <p class="text-trabajo">En Sportbetperú estamos comprometidos con nuestro socios,te apoyamos en planificación,contrucción y crecimiento de tu negocio.</p>
+    </div>
+    <div class="trabajo-2">
+      <div class="metodo">
+        <img src="img/image 18 (Traced).png" class="img-reunimos">
+        <h3 class="sub-frase">NOS REUNIMOS</h3>
+        <p class="text-frase">Resuelve tus dudas desde el primer día.Nuestros asesores lo háran posible.!El primer contacto es importante¡</p>
+      </div>
+      <div class="metodo">
+        <img src="img/image 15 (Traced).png" class="img-reunimos"> 
+        <h3 class="sub-frase">TE IMPULSAMOS</h3>
+        <p class="text-frase">Lo apoyamos en cada frase de nuestra asociación.Desde la planificacion hasta las operaciones en curso,no lo dejaremos solo.</p>
+      </div>
+      <div class="metodo">
+        <img src="img/image 17 (Traced).png" class="img-reunimos">
+        <h3 class="sub-frase">CRECEMOS JUNTOS</h3>
+        <p class="text-frase">Nos importa tu crecimiento.Juntos lograremos alcanzar todas las metas comerciales y garantizar tus ingresos.</p>
+      </div>
+      
+    </div>
+  </div>
+<div class="contacto">
   <h2 class="sub-contacto">¿TIENE ALGUNA PREGUNTA? !PÓNGASE EN CONTACTO!</h2>
   <p class="text-contacto">Si desea obtener mayor información,no dude en contactarnos,uno de nuestros asesores con gusto lo atenderá.</p>
   <div class="informacion">
@@ -354,9 +390,28 @@
       <path d="M3.62 7.79C5.06 10.62 7.38 12.94 10.21 14.38L12.41 12.18C12.69 11.9 13.08 11.82 13.43 11.93C14.55 12.3 15.75 12.5 17 12.5C17.2652 12.5 17.5196 12.6054 17.7071 12.7929C17.8946 12.9804 18 13.2348 18 13.5V17C18 17.2652 17.8946 17.5196 17.7071 17.7071C17.5196 17.8946 17.2652 18 17 18C12.4913 18 8.1673 16.2089 4.97918 13.0208C1.79107 9.8327 0 5.50868 0 1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0H4.5C4.76522 0 5.01957 0.105357 5.20711 0.292893C5.39464 0.48043 5.5 0.734784 5.5 1C5.5 2.25 5.7 3.45 6.07 4.57C6.18 4.92 6.1 5.31 5.82 5.59L3.62 7.79Z" fill="white"/>
       </svg>DESEO MÁS INFORMACIÓN</p>
   </div>
-</section>
+</div>
 </div>
 <script defer src="main.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 2,
+      slidesPerGroup: 10,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 
 </html>
