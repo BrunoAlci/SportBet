@@ -10,100 +10,64 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,800&family=Roboto:wght@300&display=swap');    
     </style>
+   
      <link rel="stylesheet" href="../package/css/swiper.min.css">
      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-   
+   <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body> 
   <div class="padre">
     
   
     <div class="banner-main">
-    <header class="header">
-      <!-- menu responsive -->
-  <div class="menu-responsive">  
-    
-      <button class="menu_bar">
-        <nav class="nav-responsive">
-            <div id="menu-responsive">
-              <div class="ul-responsive">
-                    <ul>
-                      <li ><a href="#"class="a-inicio">INICIO</a></li>
-                      <li ><a href="#"class="a-nosotros">NOSOTROS</a></li>
-                      <li class="a-productos"><a href="#">PRODUCTOS<span class="icon-responsive"></span></a>
-                              <ul>
-                                <li><a href="#">Enlace 2.2</a></li>
-                                <li><a href="#">Enlace 2.3</a></li>
-                              </ul>
-                        </li>
-                    <li class="a-apuestas"><a href="#">CASA DE APUESTAS<span class="icon-responsive"></span></a>
-                              <ul>
-                                <li><a href="#">Enlace 3.2</a></li>
-                                <li><a href="#">Enlace 3.3</a></li>
-                              </ul> 
-                      </li>
-                  <li class="a-ayuda"><a href="#">AYUDA<span class="icon-responsive"></span></a>
-                            <ul>
-                                <li><a href="#">Enlace 4.2</a></li>
-                                <li><a href="#">Enlace 4.3</a></li>
-                            </ul>
-                      </li>
-                    </ul>
-              </div>
-            </div> 
-        </nav>
-      </button>
-      <div class="logo-responsive"><img src="img-responsive/logo.png" alt=""></div>
-      <div class="whatsapp"></div>
-  </div>   
-     <!-- menu responsive -->    
-    
+      <header>
+        <div class="menu_bar">
+          <a href="#" class="bt-menu"><span class="icon-list2"></span>Menú</a>
+        </div>
         
-    
-  
-    
-    
-     <!-- menu desktop -->
-    <div class="menu">
-      <div class="logo"><img src="img/logo.png" alt="Logo"></div> 
-    <nav class="nav">
-      <ul id="menu">
-      <li ><a href="#"class="a-inicio">INICIO</a></li>
-      <li ><a href="#"class="a-nosotros">NOSOTROS</a></li>
-      <li class="a-productos"><a href="#">PRODUCTOS<svg style="width:24px;height:24px" viewBox="0 0 24 24" class="svg3">
-        <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg><span class="icon-responsive"></span></a>
-              <ul>
-                <li><a href="#">Enlace 2.2</a></li>
-                <li><a href="#">Enlace 2.3</a></li>
+        <nav>
+          <div class="logo"><img src="img/logo.png" alt="Logo"></div> 
+          <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">NOSOTROS</a></li>
+            <li class="submenu">
+              <a href="#">PRODUCTOS<svg style="width:24px;height:24px" viewBox="0 0 24 24" class="svg3">
+                <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg></a>
+              <ul class="children">
+                <li><a href="#">SubElemento #1 <span class="icon-dot"></span></a></li>
+                <li><a href="#">SubElemento #2 <span class="icon-dot"></span></a></li>
+                <li><a href="#">SubElemento #3 <span class="icon-dot"></span></a></li>
               </ul>
-        </li>
-    <li class="a-apuestas"><a href="#">CASA DE APUESTAS<svg style="width:24px;height:24px" viewBox="0 0 24 24" class="svg3">
-      <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg><span class="icon-responsive"></span></a>
-              <ul>
-                <li><a href="#">Enlace 3.2</a></li>
-                <li><a href="#">Enlace 3.3</a></li>
-              </ul> 
-      </li>
-   <li class="a-ayuda"><a href="#">AYUDA<svg style="width:24px;height:24px" viewBox="0 0 24 24" class="svg3">
-        <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg><span class="icon-responsive"></span></a>
-            <ul>
-                <li><a href="#">Enlace 4.2</a></li>
-                <li><a href="#">Enlace 4.3</a></li>
-            </ul>
-      </li>
-    </ul> 
-</nav>
-    <div class="boton-linea-ext">
-      <span class="linea1"></span>
-      <span class="linea2"></span>
-      <span class="linea3"></span>
-      <span class="linea4"></span>
-      <a href="#" class="a-contactanos">CONTÁCTANOS</a>
-    </div>
-  </div> 
-      <!-- menu desktop -->
-</header>
+            </li>
+            <li><a href="#">CASA DE APUESTAS<svg style="width:24px;height:24px" viewBox="0 0 24 24" class="svg3">
+              <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg></a>
+              <ul class="children">
+                <li><a href="#">SubElemento #1 <span class="icon-dot"></span></a></li>
+                <li><a href="#">SubElemento #2 <span class="icon-dot"></span></a></li>
+                <li><a href="#">SubElemento #3 <span class="icon-dot"></span></a></li>
+              </ul>
+            </li>
+            <li><a href="#">AYUDA<svg style="width:24px;height:24px" viewBox="0 0 24 24" class="svg3">
+              <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg></a>
+              <ul class="children">
+                <li><a href="#">SubElemento #1 <span class="icon-dot"></span></a></li>
+                <li><a href="#">SubElemento #2 <span class="icon-dot"></span></a></li>
+                <li><a href="#">SubElemento #3 <span class="icon-dot"></span></a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="boton-linea-ext">
+              <span class="linea1"></span>
+              <span class="linea2"></span>
+              <span class="linea3"></span>
+              <span class="linea4"></span>
+              <a href="#" class="a-contactanos">CONTÁCTANOS</a>
+          </div>
+        </nav>
+        
+        
+      </header>
       <div class="texto-principal">
       <div class="main-1">
         <h1>EMPRESA LÍDER DE SOFTWARE PARA CASA DE APUESTAS DEPORTIVAS EN PERÚ</h1>
