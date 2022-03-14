@@ -1,5 +1,6 @@
 
 
+
 // function geek() {
   document.querySelectorAll('a[href^="#ancla1"]').forEach(elem => {
     elem.addEventListener('click', e => {
