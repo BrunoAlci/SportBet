@@ -16,51 +16,47 @@ html , body{
 
 header {
 	width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 1000;
 }
 
 header nav {
-	background:#1E1E1E;
+	background: #1E1E1E;
 	z-index:1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
 	width:100%;
-	
+	justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
-
+header nav a :hover{
+  color: #000;
+}
 header nav ul {
 	list-style:none;
-  
 }
-
+ header nav ul :hover{
+ color: #000; 
+ }
+ header nav li:hover {
+   color: #000;
+ }
 header nav ul li {
 	display:inline-block;
 	position: relative;
 }
 
-header nav ul li:hover {
-	background:white;
-  color: black;
+header nav ul li a:hover {
+	background:#fff;
+  color: #000;
 }
 
 header nav ul li a {
-  color: white;
-  padding: 10px;
-  display: block;
-  text-decoration: none;
-  min-width: 100px;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
- flex-direction: row;
-  justify-content: center;
-  margin: 0 5px;
-}
-header nav ul li a:hover{
-	color:black;
+	color:#fff;
 	display:block;
 	text-decoration:none;
-	padding: 10px;
+	padding: 20px;
 }
 
 header nav ul li a span {
@@ -69,16 +65,41 @@ header nav ul li a span {
 
 header nav ul li:hover .children {
 	display:block;
-  padding: 0;
 }
 
 header nav ul li .children {
 	display: none;
-	background:white;
-  color: black;
+	background:#1E1E1E;
 	position: absolute;
-	width: 100%;
+	width: 150%;
 	z-index:1000;
+  
+}
+
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+  
+}
+
+header nav ul li .children li a {
+	display: block;
+}
+
+header nav ul li .children li a span {
+	float: right;
+	position: relative;
+	top:3px;
+	margin-right:0;
+	margin-left:10px;
+}
+
+header nav ul li .caret {
+	position: relative;
+	top:3px;
+	margin-left:10px;
+	margin-right:0px;
 }
 
 
@@ -88,11 +109,7 @@ header nav ul li .children {
 
 
 
-.logo{
-  display: flex;
-  max-width: 189.94px;
-  width: 100%;
-}
+
   .boton-linea-ext{
     padding: 4px 28px;
     border: none;
@@ -196,7 +213,7 @@ header nav ul li .children {
 }
 .texto-principal{
 display: flex;
- 
+ align-items: center;
   justify-content: center;
   gap: 5rem;
 }  
@@ -424,13 +441,14 @@ display: flex;
   .contact_form{
   display: flex;
   justify-content: center;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   height: 686px;
   background: #FFFFFF;
   box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.4);
   align-items: center;
   flex-flow: row;
-  margin-top: 70px;
+  margin-top: 9rem;
   }
  .h3-contact{
    margin-top: -70px;
@@ -1498,30 +1516,58 @@ html , body{
 .menu_bar {
 	display:none;
 }
+.svg3{
+  min-width: 24px;
+  height: 24px;
+}
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 header {
 	width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 1000;
 }
 
 header nav {
-	background:#023859;
+	background: #1E1E1E;
 	z-index:1000;
-	max-width: 1000px;
-	width:95%;
-	margin:20px auto;
+	display: flex;
+	width:100%;
+	justify-content: center;
+  align-items: center;
+  
 }
-
+header nav a{
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+header nav a :hover{
+  color: #000;
+}
 header nav ul {
 	list-style:none;
 }
-
+ header nav ul :hover{
+ color: #000; 
+ }
+ header nav li:hover {
+   color: #000;
+ }
 header nav ul li {
 	display:inline-block;
 	position: relative;
 }
 
-header nav ul li:hover {
-	background:#E6344A;
+header nav ul li a:hover {
+	background:#fff;
+  color: #000;
 }
 
 header nav ul li a {
@@ -1541,16 +1587,18 @@ header nav ul li:hover .children {
 
 header nav ul li .children {
 	display: none;
-	background:#011826;
+	background:#1E1E1E;
 	position: absolute;
 	width: 150%;
 	z-index:1000;
+  
 }
 
 header nav ul li .children li {
 	display:block;
 	overflow: hidden;
 	border-bottom: 1px solid rgba(255,255,255,.5);
+  
 }
 
 header nav ul li .children li a {
@@ -1571,6 +1619,20 @@ header nav ul li .caret {
 	margin-left:10px;
 	margin-right:0px;
 }
+.boton-linea-ext{
+  padding: 4px 28px;
+  border: none;
+  background: linear-gradient(180deg, #04B420 0%, #0A8916 100%);
+  color: white;
+  justify-content: center;
+  float: left;
+  position: relative;
+  line-height: 45px;
+  cursor: pointer;
+  margin: 1em 2em 1em 2em;
+  max-width: 158px;
+  width: 100%;
+}
     .banner-main{
       height: 1079px;
       background: url(/img/Frame\ 50.png);
@@ -1579,7 +1641,7 @@ header nav ul li .caret {
     }
     .texto-principal{
     display: flex;
-     
+     align-items: center;
       justify-content: center;
       gap: 5rem;
     }  
@@ -1822,7 +1884,7 @@ header nav ul li .caret {
       box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.4);
       align-items: center;
       flex-flow: row;
-      margin-top: 2.5rem;
+      margin-top: 9rem;
       margin-right: 1rem;
       }
      .h3-contact{
@@ -2917,12 +2979,22 @@ header nav ul li .caret {
 html , body{
   margin: 0 0;
 }
+.logo{
+  display: none;
+}
+.logo-responsive{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .menu_bar {
-  display:block;
-  width:100%;
+  display: flex;
+  width: 100%;
   position: fixed;
-  top:0;
-  background:#E6344A;
+  top: 0;
+  background: #1E1E1E;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .menu_bar .bt-menu {
@@ -2935,6 +3007,7 @@ html , body{
   text-decoration: none;
 }
 
+
 .menu_bar span {
   float: right;
   font-size: 40px;
@@ -2942,13 +3015,19 @@ html , body{
 
 header nav {
   width: 80%;
-  height: calc(100% - 80px);
+  height: 100%;
   position: fixed;
   right:100%;
   margin: 0;
   overflow: scroll;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
 }
-
+header nav ul{
+  display: flex;
+  flex-flow: column  wrap;
+}
 header nav ul li {
   display: block;
   border-bottom:1px solid rgba(255,255,255,.5);
