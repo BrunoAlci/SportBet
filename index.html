@@ -10,56 +10,100 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,800&family=Roboto:wght@300&display=swap');    
     </style>
+   
      <link rel="stylesheet" href="../package/css/swiper.min.css">
      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-   
+   <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body> 
   <div class="padre">
     
   
     <div class="banner-main">
-    <header class="header">
-    <div class="menu">
-     <div class="menu_bar"><span class="icon-list2"></span></div>
-     <div class="logo"><img src="img/img-desktop/logo.png" alt="Logo"></div> 
-    <nav class="nav">
-      <ul id="menu">
-      <li ><a href="#"class="a-inicio">INICIO</a></li>
-      <li ><a href="#"class="a-nosotros">NOSOTROS</a></li>
-      <li class="a-productos"><a href="#">PRODUCTOS<svg style="width:24px;height:24px" viewBox="0 0 24 24" class="svg3">
-        <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg></a>
-              <ul>
-                <li><a href="#">Enlace 2.2</a></li>
-                <li><a href="#">Enlace 2.3</a></li>
+      <header>
+        <!-- Menu desktop -->
+        <div class="menu_bar">
+          <a href="#" class="bt-menu"><img src="img/img-responsive/Union.png" alt=""><span class="icon-list2"></span></a>
+          <span class="logo-responsive"><img src="img/img-desktop/logo.png" alt=""></span>
+          <span class="whatsapp"><img src="img/img-responsive/ic_wtsp.png" alt=""></span>
+        </div>
+        
+        <nav>
+          <span class="logo"><img src="img/img-desktop/logo.png" alt=""></span>
+          <div class="cerrar-nav"><img src="img/img-responsive/cerrar.png" alt=""></div>
+          <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">NOSOTROS</a></li>
+            <li class="submenu">
+              <a href="#">PRODUCTOS<svg style="width:24px;height:24px" viewBox="0 0 24 24" class="svg3">
+                <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg><svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg4">
+                  <path d="M7.06 5.28003L4 2.22003L0.94 5.28003L8.27602e-08 4.33336L4 0.333362L8 4.33336L7.06 5.28003Z" fill="white"/>
+                  </svg></a>
+              <ul class="children">
+                <li><a href="#"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-nav-1">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12ZM8 11C9.65685 11 11 9.65685 11 8C11 6.34315 9.65685 5 8 5C6.34315 5 5 6.34315 5 8C5 9.65685 6.34315 11 8 11Z" fill="white"/>
+                  </svg>SubElemento #1</a></li>
+                <li><a href="#"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-nav-1">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12ZM8 11C9.65685 11 11 9.65685 11 8C11 6.34315 9.65685 5 8 5C6.34315 5 5 6.34315 5 8C5 9.65685 6.34315 11 8 11Z" fill="white"/>
+                  </svg>SubElemento #2</a></li>
+                <li><a href="#"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-nav-1">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12ZM8 11C9.65685 11 11 9.65685 11 8C11 6.34315 9.65685 5 8 5C6.34315 5 5 6.34315 5 8C5 9.65685 6.34315 11 8 11Z" fill="white"/>
+                  </svg>SubElemento #3</a></li>
               </ul>
-        </li>
-    <li class="a-apuestas"><a href="#">CASA DE APUESTAS<svg style="width:24px;height:24px" viewBox="0 0 24 24" class="svg3">
-      <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg></a>
-              <ul>
-                <li><a href="#">Enlace 3.2</a></li>
-                <li><a href="#">Enlace 3.3</a></li>
-              </ul> 
-      </li>
-   <li class="a-ayuda"><a href="#">AYUDA<svg style="width:24px;height:24px" viewBox="0 0 24 24" class="svg3">
-        <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg></a>
-            <ul>
-                <li><a href="#">Enlace 4.2</a></li>
-                <li><a href="#">Enlace 4.3</a></li>
-            </ul>
-      </li>
-    </ul> 
-</nav>
-    <div class="boton-linea-ext">
-      <span class="linea1"></span>
-      <span class="linea2"></span>
-      <span class="linea3"></span>
-      <span class="linea4"></span>
-      <a href="#" class="a-contactanos">CONTÁCTANOS</a>
-    </div>
-  </div> 
-</header>
+            </li>
+            <li class="submenu"><a href="#">CASA DE APUESTAS<svg style="width:24px;height:24px" viewBox="0 0 24 24" class="svg3">
+              <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg><svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg4">
+                <path d="M7.06 5.28003L4 2.22003L0.94 5.28003L8.27602e-08 4.33336L4 0.333362L8 4.33336L7.06 5.28003Z" fill="white"/>
+                </svg></a>
+              <ul class="children">
+                <li><a href="#"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-nav-1">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12ZM8 11C9.65685 11 11 9.65685 11 8C11 6.34315 9.65685 5 8 5C6.34315 5 5 6.34315 5 8C5 9.65685 6.34315 11 8 11Z" fill="white"/>
+                  </svg>SubElemento #1</a></li>
+                <li><a href="#"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-nav-1">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12ZM8 11C9.65685 11 11 9.65685 11 8C11 6.34315 9.65685 5 8 5C6.34315 5 5 6.34315 5 8C5 9.65685 6.34315 11 8 11Z" fill="white"/>
+                  </svg>SubElemento #2</a></li>
+                <li><a href="#"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-nav-1">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12ZM8 11C9.65685 11 11 9.65685 11 8C11 6.34315 9.65685 5 8 5C6.34315 5 5 6.34315 5 8C5 9.65685 6.34315 11 8 11Z" fill="white"/>
+                  </svg>SubElemento #3</a></li>
+              </ul>
+            </li>
+            <li class="submenu"><a href="#">AYUDA<svg style="width:24px;height:24px" viewBox="0 0 24 24" class="svg3">
+              <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></svg><svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg4">
+                <path d="M7.06 5.28003L4 2.22003L0.94 5.28003L8.27602e-08 4.33336L4 0.333362L8 4.33336L7.06 5.28003Z" fill="white"/>
+                </svg></a>
+              <ul class="children">
+                <li><a href="#"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-nav-1">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12ZM8 11C9.65685 11 11 9.65685 11 8C11 6.34315 9.65685 5 8 5C6.34315 5 5 6.34315 5 8C5 9.65685 6.34315 11 8 11Z" fill="white"/>
+                  </svg>SubElemento #1</a></li>
+                <li><a href="#"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-nav-1">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12ZM8 11C9.65685 11 11 9.65685 11 8C11 6.34315 9.65685 5 8 5C6.34315 5 5 6.34315 5 8C5 9.65685 6.34315 11 8 11Z" fill="white"/>
+                  </svg>SubElemento #2</a></li>
+                <li><a href="#"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-nav-1">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12ZM8 11C9.65685 11 11 9.65685 11 8C11 6.34315 9.65685 5 8 5C6.34315 5 5 6.34315 5 8C5 9.65685 6.34315 11 8 11Z" fill="white"/>
+                  </svg>SubElemento #3</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="boton-linea-ext">
+              <span class="linea1"></span>
+              <span class="linea2"></span>
+              <span class="linea3"></span>
+              <span class="linea4"></span>
+              <a href="#" class="a-contactanos">CONTÁCTANOS</a>
+          </div>
+        <div class="redes-nav">
+          <h2 class="sub-nav">Nuestras redes:</h2>
+          <div class="icons-redes-nav">
+            <span><img src="img/img-responsive/obj_fb.png" alt=""></span>
+            <span><img src="img/img-responsive/ic_instagram.png" alt=""></span>
+            <span><img src="img/img-responsive/obj_yt.png" alt=""></span>
+          </div>
+        </div>
+        </nav>
+        
+        
+      </header>
       <div class="texto-principal">
       <div class="main-1">
         <h1>EMPRESA LÍDER DE SOFTWARE PARA CASA DE APUESTAS DEPORTIVAS EN PERÚ</h1>
@@ -118,7 +162,7 @@
       
         <div class="contact_form">
           <div class="formulario">
-            <h3 class="h3-contact">NOS PONDREMOS EN CONTACTO <br>CONTIGO<br><br></h3> 
+            <h3 class="h3-contact">NOS PONDREMOS EN CONTACTO CONTIGO</h3> 
             <form action="submeter-formulario.php" method="post">	
             <p><label for="nombre" class="colocar_nombre">Nombre completo<span class="obligatorio"></span></label><input type="text" name="introducir_nombre" id="nombre" " placeholder="Nombre y apellidos"></p>
             
@@ -139,7 +183,7 @@
           
         <div class="figure-scroll">
           <figure class="figure-scroll-bono">
-            <a href="#ancla1"><svg width="44" height="28" viewBox="0 0 44 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg4">
+            <a href="#ancla1"><svg width="44" height="28" viewBox="0 0 44 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-4">
               <path d="M5.5525 0.745239L22 17.1927L38.4475 0.745239L43.5 5.83357L22 27.3336L0.5 5.83357L5.5525 0.745239Z" fill="#ECECEC"/>
               </svg></a>
           </figure>

@@ -19,11 +19,15 @@ html , body{
 .svg4{
   display: none;
 }
+.svg-nav-1{
+  display: none;
+}
 header {
 	width: 100%;
   display: flex;
   position: fixed;
   z-index: 1000;
+  
 }
 .cerrar-nav{
   display: none;
@@ -36,6 +40,7 @@ header nav {
 	justify-content: center;
   align-items: center;
   gap: 1rem;
+  padding: 0 2rem;
 }
 header nav a :hover{
   color: #000;
@@ -64,6 +69,8 @@ header nav ul li a {
 	display:block;
 	text-decoration:none;
 	padding: 20px;
+  display: flex;
+  align-items: center;
 }
 
 header nav ul li a span {
@@ -214,7 +221,7 @@ header nav ul li .caret {
   }
 .banner-main{
   height: 1079px;
-  background: url(/img/img-desktop/banner-main.png);
+  background: url(./img/img-desktop/banner-main.png);
   position: relative;
   background-size: cover;
 }
@@ -223,6 +230,7 @@ display: flex;
  align-items: center;
   justify-content: center;
   gap: 5rem;
+  padding: 0 2rem;
 }  
 .main-1{
     display: flex;
@@ -460,6 +468,9 @@ display: flex;
  .h3-contact{
    margin-top: -70px;
  }
+ .formulario{
+   margin-left: 2rem;
+ }
   input{
     position: relative;
     background-color: #fbfbfb; 
@@ -484,8 +495,7 @@ display: flex;
     padding-left: 10px;
     margin-bottom: 20px; 
   }
-  
-  
+    
   label{
     position: relative;
     display: block; 
@@ -590,10 +600,10 @@ display: flex;
     
     -webkit-animation: bounce 2s ease-in infinite;
     animation: bounce 2s ease-in infinite;
-    animation-name:  svg4 ;
+    animation-name:  svg-4 ;
      }
     
-    @keyframes svg4{
+    @keyframes svg-4{
       0%, 20%, 53%, 100% {
         
         animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -637,6 +647,7 @@ display: flex;
   display: flex;
   flex-flow: column;
   align-self: center;
+  padding: 0 2rem;
 }
     .sub2{
       width: 800px;
@@ -684,7 +695,7 @@ display: flex;
             height: 504px;
             padding: 80px 0px;
             
-            max-width: 100vw;
+            max-width: 90vw;
             overflow: hidden;
           }
           .swiper-wrapper{
@@ -805,7 +816,7 @@ display: flex;
      
 .we-about{
   background: #121212;
-  height: 811px;
+  padding: 4rem 2rem;
   position: relative;
   display: flex;
   align-content: center;
@@ -817,11 +828,11 @@ display: flex;
           flex-flow: column;
         }
         .sub3{
-          width: 800px;
+          max-width: 800px;
           height: 34px;
           left: 0px;
           margin-top: 50px;
-          
+          width: 100%;
           font-family: Montserrat;
           font-style: normal;
           font-weight: 600;
@@ -910,6 +921,7 @@ display: flex;
         justify-content: center;
        position: relative;
        gap: 3rem;
+       padding: 2rem 2rem;
         align-items: flex-end;
       }       
             .rectangle1{
@@ -924,7 +936,7 @@ display: flex;
               display: flex;
               flex-direction: column;
               align-items: baseline;
-              margin-top: 7rem;
+             
             }
             .titulo-somos{
               width: 680px;
@@ -1104,6 +1116,7 @@ display: flex;
               text-align: center;
               text-transform: uppercase;
               gap: 3.5rem;
+              padding: 0 1rem;
             }
             .h2-parallax{
               max-width: 224px;
@@ -1136,18 +1149,20 @@ display: flex;
       .container-2{
         display: flex;
        position: relative;
-       gap: 5rem;
+       
+       padding: 9rem 2rem 3rem 2rem
       }     
            
             .sub-container-1{
               display: flex;
-              margin-top: 13rem;
+              
               
             }
             .sub-container-2{
               display: flex;
               flex-flow: column wrap;
-             margin-top: 11rem;
+             
+             padding: 0 2rem;
             }   
                 .sub-socio{
                   font-weight: 600;
@@ -1156,7 +1171,7 @@ display: flex;
                   display: flex;
                   align-items: center;
                   text-transform: uppercase;
-                  text-align: center;
+                  
                   color: #FFFFFF;
                   width: 680px;
                   height: 58px;
@@ -1270,7 +1285,7 @@ display: flex;
                 }
 .metodo-trabajo{
 background: #121212;
-
+padding: 5rem 2rem;
 position: relative;
 display: flex;
 align-content: center;
@@ -1286,7 +1301,7 @@ flex-flow: column wrap;
                           max-width: 800px;
                           height: 34px;
                           left: 0px;
-                          margin-top: 50px;
+                         
                           width: 100%;
                           font-family: Montserrat;
                           font-style: normal;
@@ -1372,6 +1387,7 @@ flex-flow: column wrap;
   justify-content: center;
   align-content: center;
   height: 464px;
+  padding: 0 2rem;
 }
           .sub-contacto{
             
@@ -1642,7 +1658,7 @@ header nav ul li .caret {
 }
     .banner-main{
       height: 1079px;
-      background: url(/img/Frame\ 50.png);
+      
       position: relative;
       background-size: cover;
     }
@@ -2550,7 +2566,7 @@ header nav ul li .caret {
             position: relative;
             display: flex;
             flex-flow: column wrap;
-            background: url(img/wallpaper_kpis.png);
+           
             background-size: cover;
             background-attachment: fixed;
             height: 323px;
@@ -2736,7 +2752,7 @@ header nav ul li .caret {
                     }
 .metodo-trabajo{
       background: #121212;
-
+    
       position: relative;
       display: flex;
       align-content: center;
@@ -3031,11 +3047,15 @@ align-items: center;
 color: #FFFFFF;
 
 }
+.svg-nav-1{
+  display: inline
+}
 .redes-nav{
   display: flex;
   flex-flow: column;
   gap: 1rem;
   margin-left: 1.8rem;
+  margin-top: 1rem;
 }
 .icons-redes-nav{
   display: flex;
@@ -3059,6 +3079,7 @@ color: #FFFFFF;
 header nav {
   width: 80%;
   height: 100%;
+  left: 100%;
   position: fixed;
   display: flex;
   overflow: scroll;
@@ -3080,7 +3101,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  display: block;
+  display: flex;
 }
 
 header nav ul li:hover .children {
@@ -3094,15 +3115,34 @@ header nav ul li .children {
 
 header nav ul li .children li a {
   margin-left:20px;
+ display: flex;
 }
-
+header nav ul li .children li {
+  
+ border-bottom: none;
+}
 header nav ul li .caret {
   float: right;
 }
-
+.boton-linea-ext{
+  padding: 4px 28px;
+  border: none;
+  background: linear-gradient(180deg, #04B420 0%, #0A8916 100%);
+  color: white;
+  justify-content: center;
+  float: left;
+  display: flex;
+  text-align: center;
+  position: relative;
+  line-height: 45px;
+  cursor: pointer;
+  margin: 4em 2em 1em 2em;
+  max-width: 178px;
+  width: 100%;
+}
     .banner-main{
       height: 1079px;
-      background: url(/img/Frame\ 50.png);
+      
       position: relative;
       background-size: cover;
     }
@@ -3179,83 +3219,7 @@ header nav ul li .caret {
         
         
           }
-          .opcion1 .linea1,
-        .opcion1 .linea2,
-        .opcion1 .linea1_1,
-        .opcion1 .linea2_2,
-        .opcion1 .linea1,
-        .opcion1 .linea2,
-        .opcion1 .linea1_1,
-        .opcion1 .linea2_2 {
-          top: 0;
-          right: 0;
-        }
-        .opcion1 .linea3,
-        .opcion1 .linea4,
-        .opcion1 .linea3_2,
-        .opcion1 .linea4_2,
-        .opcion1 .linea3,
-        .opcion1 .linea4,
-        .opcion1.linea3_2,
-        .opcion1 .linea4_2 {
-          bottom: 0;
-          left: 0;
-        }
-        .opcion1 .linea1,
-        .opcion1 .linea3,
-        .opcion1 .linea1_2,
-        .opcion1 .linea3_2,
-        .opcion1 .linea1,
-        .opcion1 .linea3,
-        .opcion1 .linea1_2,
-        .opcion1 .linea3_2 {
-          height: 3px;
-          width: 18px;
-        }
-        .opcion1 .linea2,
-        .opcion1 .linea4,
-        .opcion1.linea2_2,
-        .opcion1 .linea4_2,
-        .opcion1.linea2,
-        .opcion1 .linea4,
-        .opcion1 .linea2_2,
-        .opcion1 .linea4_2{
-          height: 18px;
-          width: 3px;
-        }
-        .opcion1 span,
-        .opcion1 span {
-          position: absolute;
-          background-color: white;
-          display: block;
-          transition: all 300ms; 
-        }
-        .opcion1:hover .linea1,
-        .opcion1:hover .linea3,
-        .opcion1:active .linea1,
-        .opcion1:active .linea3,
-        .opcion1:hover .linea1,
-        .opcion1:hover .linea3,
-        .opcion1:active .linea1,
-        .opcion1:active .linea3 {
-          width: 100%;
-          background: white(135,238,190,1);
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87eebe', endColorstr='#289dbd', GradientType=1 );
-        }
-        .opcion1:hover .linea2,
-        .opcion1:active .linea2,
-        .opcion1:hover .linea2,
-        .opcion1:active .linea2{
-          height:100%;
-          background: white;
-        }
-        .opcion1:hover .linea4,
-        .opcion1:active .linea4,
-        .opcion1:hover .linea4,
-        .opcion1:active .linea4{
-          height:100%;
-          background: white;
-        }
+          
           .opcion2{
         padding: 16px 50px;
         border: none;
@@ -3270,85 +3234,29 @@ header nav ul li .caret {
         
         
           }
-          .opcion2 .linea1,
-      .opcion2 .linea2,
-      .opcion2 .linea1_1,
-      .opcion2 .linea2_2,
-      .opcion2 .linea1,
-      .opcion2 .linea2,
-      .opcion2 .linea1_1,
-      .opcion2 .linea2_2 {
-        top: 0;
-        right: 0;
-      }
-      .opcion2 .linea3,
-      .opcion2 .linea4,
-      .opcion2 .linea3_2,
-      .opcion2 .linea4_2,
-      .opcion2 .linea3,
-      .opcion2 .linea4,
-      .opcion2.linea3_2,
-      .opcion2 .linea4_2 {
-        bottom: 0;
-        left: 0;
-      }
-      .opcion2 .linea1,
-      .opcion2 .linea3,
-      .opcion2 .linea1_2,
-      .opcion2 .linea3_2,
-      .opcion2 .linea1,
-      .opcion2 .linea3,
-      .opcion2 .linea1_2,
-      .opcion2 .linea3_2 {
-        height: 3px;
-        width: 18px;
-      }
-      .opcion2 .linea2,
-      .opcion2 .linea4,
-      .opcion2.linea2_2,
-      .opcion2 .linea4_2,
-      .opcion2 .linea2,
-      .opcion2 .linea4,
-      .opcion2 .linea2_2,
-      .opcion2 .linea4_2{
-        height: 18px;
-        width: 3px;
-      }
-      .opcion2 span,
-      .opcion2 span {
+      .contact-escape{
+        background: url(/img/img-responsive/button-escape-contact.png);
+        min-width: 46px;
+        height: 46px;
+        background-color: #FFFFFF;
         position: absolute;
-        background-color: white;
-        display: block;
-        transition: all 300ms; 
-      }
-      .opcion2:hover .linea1,
-      .opcion2:hover .linea3,
-      .opcion2:active .linea1,
-      .opcion2:active .linea3,
-      .opcion2:hover .linea1,
-      .opcion2:hover .linea3,
-      .opcion2:active .linea1,
-      .opcion2:active .linea3 {
-        width: 100%;
-        background: white(135,238,190,1);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87eebe', endColorstr='#289dbd', GradientType=1 );
-      }
-      .opcion2:hover .linea2,
-      .opcion2:active .linea2,
-      .opcion2:hover .linea2,
-      .opcion2:active .linea2{
-        height:100%;
-        background: white;
-      }
-      .opcion2:hover .linea4,
-      .opcion2:active .linea4,
-      .opcion2:hover .linea4,
-      .opcion2:active .linea4{
-        height:100%;
-        background: white;
-      }
+        left: -3rem;
+      }    
+      .img-contact-form{
+        background: url(/img/img-responsive/button-contact.png);
+        min-width: 46px;
+        height: 46px;
+       margin: auto;
+       right: 0;
+       top: 7rem;
+       padding: 20px;
+       position: absolute;
+       overflow: hidden;
+      }    
+      
       .contact_form{
       display: flex;
+      position: fixed;
       justify-content: center;
       max-width: 360px;
       width: 100%;
@@ -3358,7 +3266,8 @@ header nav ul li .caret {
       align-items: center;
       flex-flow: row;
       margin-top: 2.5rem;
-      margin-right: 1rem;
+      right: 100%;
+      z-index: 100;
       }
      .h3-contact{
        margin-top: -70px;
@@ -3501,10 +3410,10 @@ header nav ul li .caret {
         
         -webkit-animation: bounce 2s ease-in infinite;
         animation: bounce 2s ease-in infinite;
-        animation-name:  svg4 ;
+        animation-name:  svg-4 ;
          }
         
-        @keyframes svg4{
+        @keyframes svg-4{
           0%, 20%, 53%, 100% {
             
             animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -3609,7 +3518,7 @@ header nav ul li .caret {
                 
                   max-width: 388px;
                   max-height: 340px;
-                  width: 100%;
+                  width: 100% !important;
                   left: 0px;
                   top: 0px;
                   position: relative;
@@ -4030,7 +3939,7 @@ header nav ul li .caret {
             position: relative;
             display: flex;
             flex-flow: column wrap;
-            background: url(img/wallpaper_kpis.png);
+            
             background-size: cover;
             background-attachment: fixed;
             
@@ -4234,7 +4143,7 @@ header nav ul li .caret {
                     }
 .metodo-trabajo{
       background: #121212;
-
+      
       position: relative;
       display: flex;
       align-content: center;
