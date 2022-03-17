@@ -214,7 +214,7 @@ header nav ul li .caret {
   }
 .banner-main{
   height: 1079px;
-  background: url(/img/Frame\ 50.png);
+  background: url(/img/img-desktop/banner-main.png);
   position: relative;
   background-size: cover;
 }
@@ -1087,7 +1087,7 @@ display: flex;
         position: relative;
         display: flex;
         flex-flow: column wrap;
-        background: url(img/wallpaper_kpis.png);
+        background: url(img/img-desktop/wallpaper_kpis.png);
         background-size: cover;
         background-attachment: fixed;
         height: 323px;
