@@ -230,7 +230,7 @@ display: flex;
  align-items: center;
   justify-content: center;
   gap: 5rem;
-  padding: 0 2rem;
+  
 }  
 .main-1{
     display: flex;
@@ -3079,7 +3079,7 @@ color: #FFFFFF;
 header nav {
   width: 80%;
   height: 100%;
-  left: 100%;
+  left: -100%;
   position: fixed;
   display: flex;
   overflow: scroll;
@@ -3087,12 +3087,14 @@ header nav {
   align-items: baseline;
   gap: 1rem;
   justify-content: flex-start;
+  padding: inherit;
 }
 header nav ul{
   display: flex;
   flex-flow: column  wrap;
   align-items: stretch;
   width: 100%;
+  padding: inherit;
 }
 header nav ul li {
   display: block;
@@ -3114,7 +3116,7 @@ header nav ul li .children {
 }
 
 header nav ul li .children li a {
-  margin-left:20px;
+  
  display: flex;
 }
 header nav ul li .children li {
@@ -3140,6 +3142,7 @@ header nav ul li .caret {
   max-width: 178px;
   width: 100%;
 }
+
     .banner-main{
       height: 1079px;
       
@@ -3158,7 +3161,7 @@ header nav ul li .caret {
         margin-top: 100px;
         justify-content: center;
         align-content: center;
-        align-items: center;
+        
         
     }
         .opciones{
@@ -3204,6 +3207,7 @@ header nav ul li .caret {
          flex-flow: column wrap;
         left: none;
          align-content: center;
+         align-items: center;
        }
           .opcion1{
         padding: 16px 9px;
@@ -3267,7 +3271,7 @@ header nav ul li .caret {
       align-items: center;
       flex-flow: row;
       top: -7rem;
-      right: 100%;
+      right: -300%;
       z-index: 1000;
       }
      .h3-contact{
@@ -3365,11 +3369,19 @@ header nav ul li .caret {
          outline:0;
          border: 1px solid #04B420;
        }
+       .wraper-popup{
+        overflow: hidden;
+        max-width: 100vh;
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        margin-left: 1rem;
+       }
        .popup{
          margin-top: 30px;
         display: flex;
         justify-content: flex-end;
-        gap: 20px;
+        
         margin-left: 1rem;
        }
        .popupContent .popup {

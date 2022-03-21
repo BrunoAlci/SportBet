@@ -12,7 +12,7 @@ function main () {
 		} else {
 			contador = 1;
 			$('.contact_form').animate({
-				right: '100%'
+				right: '-100%'
 			});
 		}
 	});
@@ -25,7 +25,7 @@ function main () {
 		} else {
 			contador = 1;
 			$('.contact_form').animate({
-				right: '100%'
+				right: '-100%'
 			});
 		}
 	});
