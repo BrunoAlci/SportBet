@@ -19,7 +19,7 @@ function main () {
 	$('.contact-escape').click(function(){
 		if (contador == 1) {
 			$('.contact_form').animate({
-				right: '0'
+				right: '-1rem'
 			});
 			contador = 0;
 		} else {
